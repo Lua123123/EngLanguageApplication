@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rcv"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingEnd="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp">
+
+        <LinearLayout
+            android:id="@+id/layout_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_item_rcv"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/brandon2"
+                android:paddingStart="@dimen/_7sdp"
+                android:text="Word"
+                android:textColor="#2e3648"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/brandon2"
+                android:paddingStart="@dimen/_7sdp"
+                android:text="Mean"
+                android:textColor="#f4c243"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

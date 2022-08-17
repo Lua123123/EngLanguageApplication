@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layoutVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgVideo"
+            android:layout_width="70dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/videoName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Video Name"
+                android:textColor="@color/nearBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0.3"
+                android:fontFamily="@font/brandon2"
+                android:gravity="center_vertical"
+                android:text="Shadowing Studio"
+                android:textColor="@color/nearBlack" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:fontFamily="@font/brandon2"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/nearBlack" />
+    </LinearLayout>
+</layout>
